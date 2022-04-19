@@ -1,7 +1,7 @@
 FROM jenkins/jenkins
 
 USER root
-
+RUN hwclock --hctosys
 RUN apt-get update && apt-get install python3-pip -y
 #    && \
 #    pip3 install ansible --upgrade &&\
