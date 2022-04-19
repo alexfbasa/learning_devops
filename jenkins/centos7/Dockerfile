@@ -16,5 +16,6 @@ RUN /usr/bin/ssh-keygen -A
 EXPOSE 22
 RUN rm -rf /run/nologin
 
+RUN yum -y install mysql
 
 CMD /usr/sbin/sshd -D
