@@ -15,7 +15,6 @@ RUN chown remote_user:remote_user -R /home/remote_user/.ssh && \
 RUN /usr/bin/ssh-keygen -A
 EXPOSE 22
 RUN rm -rf /run/nologin
-RUN yum -y intall mysql
 RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
     python get-pip.py
 
