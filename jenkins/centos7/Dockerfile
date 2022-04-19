@@ -17,7 +17,7 @@ EXPOSE 22
 RUN rm -rf /run/nologin
 
 RUN yum -y install epel-release && yum clean all
-RUN yum -y install python-pip && yum clean all
+RUN yum -y install python3-pip && yum clean all
 
 RUN yum -y install mysql
 
