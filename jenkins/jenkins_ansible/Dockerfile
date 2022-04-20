@@ -1,7 +1,6 @@
 FROM jenkins/jenkins
-
 USER root
 RUN apt-get update
-#    pip3 install ansible --upgrade \
-
-USER jenkins
+RUN apt-get install -y python-pip
+# Install app dependencies
+RUN pip install --upgrade pip
