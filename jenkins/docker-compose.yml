@@ -23,7 +23,7 @@ services:
     image: mysql:5.7
     environment:
       - "MYSQL_ROOT_PASSWORD=1234"
-    volume:
+    volumes:
       - "$PWD/db_data:/var/lib/mysql"
     networks:
       - net
