@@ -6,6 +6,6 @@ while [ $counter -lt 50 ]; do
     lastname=$(nl people.txt | grep -w $counter | awk '{print$2}' | awk -F ',' '{print$2}')
     age=$(shuf -i 5-50 -n 1)
     let counter=counter+1
-    mysql -u root -p1234 people -e "insert into register values ($counter, '$name', '$lastname, $age)"
+    mysql -u root -p1234 people insert into register values "($counter, '$name', '$lastname, $age)"
     echo "$counter, $name $lastname, $age was correctly imported"
 done
