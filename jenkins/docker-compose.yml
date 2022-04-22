@@ -28,5 +28,14 @@ services:
       - "$PWD/tmp:/home/db"
     networks:
       - net
+  web:
+    container_name: web
+    image: web-server
+    build:
+      context: jenkins-ansible/web
+    ports:
+      - "80:80"
+    networks:
+      - net
 networks:
   net:
