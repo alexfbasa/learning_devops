@@ -6,17 +6,17 @@ RUN yum -y install nginx openssl --enablerepo=nginx
 RUN yum -y install yum-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm && \
     yum -y install \
     php71u-fpm                                                               \
-    php71u-cli                                                               \
-    php71u-mysqlnd                                                           \
-    php71u-soap                                                              \
-    php71u-xml                                                               \
-    php71u-zip                                                               \
-    php71u-json                                                              \
-    php71u-mcrypt                                                            \
-    php71u-mbstring                                                          \
-    php71u-zip                                                               \
-    php71u-gd                                                                \
-    --enablerepo=ius && yum clean all
+#    php71u-cli                                                               \
+#    php71u-mysqlnd                                                           \
+#    php71u-soap                                                              \
+#    php71u-xml                                                               \
+#    php71u-zip                                                               \
+#    php71u-json                                                              \
+#    php71u-mcrypt                                                            \
+#    php71u-mbstring                                                          \
+#    php71u-zip                                                               \
+#    php71u-gd                                                                \
+#    --enablerepo=ius && yum clean all
 
 EXPOSE 80 443
 
