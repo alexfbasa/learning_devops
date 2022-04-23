@@ -3,7 +3,7 @@ FROM remote-host
 COPY ./conf/nginx.repo /etc/yum.repos.d/nginx.repo
 
 RUN yum -y install nginx openssl --enablerepo=nginx
-RUN yum -y install https://repo.ius.io/ius-release-el7.rpm
+RUN yum -y install yum-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm
    #&& \
 #  yum -y install                                                             \
 #    php71u-fpm                                                               \
